@@ -1,0 +1,67 @@
+.sidebar-block {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    padding-right: 0px;
+    overflow: hidden;
+    background-color: #5da4d9;
+}
+
+.sidebar i {
+    font-size: 23px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.sidebar a {
+    color: white;
+}
+
+.sidebar p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 17pt;
+}
+
+.sidebar h4 {
+    font-size: 12pt;
+    line-height: 20pt;
+    opacity: 1;
+    margin: 0 0 5px 0;
+}
+
+.sidebar-block h3{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.info span {
+    opacity: 0.7;
+    font-weight: 300;
+    padding: 0 15px 15px 0;
+}
+
+#work {
+    margin-bottom: 15px;
+}
+
+.sidebar .info {
+    border-bottom: 1px solid #4783c2;
+    padding-left: 0px;
+}
+
+.details {
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+
+h3, h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    line-height: 24pt;
+    font-weight: 500;
+}
+
