@@ -56,12 +56,13 @@ $(document).ready(function() {
             type: "POST",
             url: "https://script.google.com/macros/s/AKfycbyOWDjDBhuiHs4DC11iCbtnX9d1f1qwC4TZ0kcHW7yr-IUTwyE/exec",
             data: "name=" + name + "&email=" + email + "&message=" + message,
-            success: function(text) {
-                if (text == "success") {
+            success: function(resp) {
+                console.log(resp);
+                if (resp.result == "success") {
                     formSuccess();
                 } else {
                     formError();
-                    submitMSG(false, text);
+                    submitMSG(false, resp.data.message);
                 }
             }
         });
@@ -69,7 +70,7 @@ $(document).ready(function() {
 
     function formSuccess() {
         $("#contactForm")[0].reset();
-        submitMSG(true, "Message Sent!")
+        submitMSG(true, "Message Sent!");
     }
 
     function formError() {
