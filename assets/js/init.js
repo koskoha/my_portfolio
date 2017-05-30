@@ -179,9 +179,9 @@ $(document).ready(function() {
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(24.906308, 91.870413),
+            position: new google.maps.LatLng(39.060042, -77.104752),
             map: map,
-            title: '24 Golden Tower (2nd floor), Amborkhana, Sylhet.!'
+            title: '12409 Braxfield Ct, North Bethesda, MD 20852'
         });
     }
 });
