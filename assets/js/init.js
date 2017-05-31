@@ -181,7 +181,7 @@ $(document).ready(function() {
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(39.060042, -77.104752),
             map: map,
-            title: '12409 Braxfield Ct, North Bethesda, MD 20852'
+            title: 'North Bethesda, MD 20852'
         });
     }
 });
