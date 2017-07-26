@@ -203,6 +203,8 @@ body {
 }
 
 .sidebar .heading .title {
+    text-shadow: 3px 3px #5da4d9;
+    margin-right: 9%;
     position: absolute;
     right: 11px;
     bottom: 46px;
