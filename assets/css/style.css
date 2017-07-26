@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #ffffff;
+    color: #5da4d9;
 }
 
 .clear {
@@ -842,7 +842,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 #footer .copyright a {
-    color: inherit;
+    color: #5da4d9;
 }
 
 #footer .copyright li {
