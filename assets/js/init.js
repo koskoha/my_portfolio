@@ -57,6 +57,7 @@ $(document).ready(function() {
             url: "https://script.google.com/macros/s/AKfycbyOWDjDBhuiHs4DC11iCbtnX9d1f1qwC4TZ0kcHW7yr-IUTwyE/exec",
             data: "name=" + name + "&email=" + email + "&message=" + message,
             success: function(resp) {
+                console.log(resp);
                 if (resp.result == "success") {
                     formSuccess();
                 } else {
