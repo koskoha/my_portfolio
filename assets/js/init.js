@@ -148,6 +148,7 @@ $(document).ready(function() {
                 MAP
     ***************************************************************************/
 
+
     google.maps.event.addDomListener(window, 'load', init);
 
     function init() {
@@ -155,7 +156,7 @@ $(document).ready(function() {
             zoom: 17,
             scrollwheel: false,
             navigationControl: false,
-            center: new google.maps.LatLng(39.060042, -77.104752),
+            center: new google.maps.LatLng(39.061500, -77.128490),
             styles: [{ "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#e9e9e9" }, { "lightness": 17 }] },
                 { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 20 }] },
                 { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }, { "lightness": 17 }] },
