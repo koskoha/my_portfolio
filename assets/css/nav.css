@@ -118,6 +118,13 @@ Screenshots
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  #project-gallery-view,
+  #resume,
+  #contact-form {
+    padding: 47px;
+  }
+}
 @media only screen and (max-width: 599px) {
   .screenshots {
     padding: 60px;
