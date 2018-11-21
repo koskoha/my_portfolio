@@ -153,7 +153,8 @@ $(document).ready(function() {
     ***************************************************************************/
 
 
-    google.maps.event.addDomListener(window, 'load', init);
+    if('#contact-form'){
+        google.maps.event.addDomListener(window, 'load', init);
 
     function init() {
         var mapOptions = {
@@ -189,4 +190,4 @@ $(document).ready(function() {
             title: 'North Bethesda, MD 20852'
         });
     }
-});
+}});
