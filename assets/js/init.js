@@ -103,29 +103,32 @@ $(document).ready(function() {
             dataHide = $('#portfolio-item'),
             preLoader = $('#loader'),
             backBtn = $('#back-button'),
-            filterBtn = $('#filter-button');
-
-        dataHide.animate({ 'marginLeft': '-120%' }, { duration: 400, queue: false });
-        filterBtn.animate({ 'marginLeft': '-120%' }, { duration: 400, queue: false });
-        dataHide.fadeOut(400);
-        filterBtn.fadeOut(400);
-        setTimeout(function() { preLoader.show(); }, 400);
-        setTimeout(function() {
-            dataShow.load(href, function() {
-                dataShowMeta.remove();
-                preLoader.hide();
-                dataShow.fadeIn(600);
-                backBtn.fadeIn(600);
-            });
-        }, 800);
-    });
-
-    $('#back-button').on('click', function(event) {
-        event.preventDefault();
-        var dataShow = $('#portfolio-item'),
+            filterBtn = $('#filter-button'),
+            portfolioNav = $('.portfolio-nav');
+            
+            dataHide.animate({ 'marginLeft': '-120%' }, { duration: 400, queue: false });
+            filterBtn.animate({ 'marginLeft': '-120%' }, { duration: 400, queue: false });
+            dataHide.fadeOut(400);
+            filterBtn.fadeOut(400);
+            portfolioNav.fadeOut();
+            setTimeout(function() { preLoader.show(); }, 400);
+            setTimeout(function() {
+                dataShow.load(href, function() {
+                    dataShowMeta.remove();
+                    preLoader.hide();
+                    dataShow.fadeIn(600);
+                    backBtn.fadeIn(600);
+                });
+            }, 800);
+        });
+        
+        $('#back-button').on('click', function(event) {
+            event.preventDefault();
+            $('.portfolio-nav').fadeIn()
+            var dataShow = $('#portfolio-item'),
             dataHide = $('#project-gallery-view'),
             filterBtn = $('#filter-button');
-
+            
         $("[data-animate]").each(function() {
             $(this).addClass($(this).attr('data-animate'));
         });
@@ -154,7 +157,7 @@ $(document).ready(function() {
 
     function init() {
         var mapOptions = {
-            zoom: 17,
+            zoom: 10,
             scrollwheel: false,
             navigationControl: false,
             center: new google.maps.LatLng(39.061500, -77.128490),
@@ -181,7 +184,7 @@ $(document).ready(function() {
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(39.060042, -77.104752),
+            position: new google.maps.LatLng(39.061500, -77.128490),
             map: map,
             title: 'North Bethesda, MD 20852'
         });
