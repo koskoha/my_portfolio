@@ -9,7 +9,7 @@
     <!-- META TAG -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CV, Portfolio, Resume" />
-    <meta name="author" content="Md. Siful Islam, Desiver Web" />
+    <meta name="author" content="Kostiantyn Kobylinskyi" />
 
     <!-- FAVICON -->
     <link rel="icon" href="assets/images/favicon.ico" />
@@ -95,15 +95,15 @@
               <div class=" nav-icon">
                 <nav>
                   <div class="nav-wrapper">
-                    <ul id="nav-mobile" class="side-nav">
+                    <ul id="nav-mobile" class="sidenav">
                       <li><a href="index.html">Projects</a></li>
                       <li><a href="resume.html">Resume</a></li>
                       <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <a
                       href="#"
-                      data-activates="nav-mobile"
-                      class="button-collapse btn-floating btn-large waves-effect waves-light blue  lighten-2 "
+                      data-target="nav-mobile"
+                      class="button-collapse btn-floating btn-large waves-effect waves-light blue  lighten-2 sidenav-trigger"
                       ><i class="material-icons">menu</i></a
                     >
                   </div>
@@ -134,10 +134,13 @@
                   <!-- text -->
                   <div class="section-item-details">
                     <p>
-                      Full-Stack Developer able to build a sophisticated website
-                      with full database backend all the way from mockup to
-                      rollout. Adept at working with diverse teams to implement
-                      projects. A quick study on new technologies.
+                      Experienced Full-Stack Web Developer with a demonstrated
+                      history of working in the information technology and
+                      services industry. Skilled in VueJS, jQuery and React.
+                      Strong experience with JSON, RESTful APIs, HTTP
+                      specifications, and web application architecture. Strong
+                      engineering professional with a Bachelor's degree focused
+                      in Computer Science from Computer Science and Technology.
                     </p>
                   </div>
                 </div>
@@ -217,47 +220,48 @@
                 >
                   <h3>Professional Skills</h3>
 
-                  <span>Adobe Photoshop</span>
-                  <div class="progress"><div class="determinate">70%</div></div>
-
-                  <span>HTML</span>
-                  <div class="progress"><div class="determinate">95%</div></div>
-
-                  <span>CSS</span>
-                  <div class="progress"><div class="determinate">90%</div></div>
-
-                  <span>Bootstrap</span>
-                  <div class="progress"><div class="determinate">93%</div></div>
-
-                  <span>Materialize</span>
-                  <div class="progress"><div class="determinate">86%</div></div>
-
-                  <span>Javascript</span>
-                  <div class="progress"><div class="determinate">85%</div></div>
-
-                  <span>Java</span>
-                  <div class="progress"><div class="determinate">89%</div></div>
-
-                  <span>MySQL</span>
-                  <div class="progress"><div class="determinate">90%</div></div>
-
-                  <span>Firebase</span>
-                  <div class="progress"><div class="determinate">85%</div></div>
-
-                  <span>React.js</span>
-                  <div class="progress"><div class="determinate">80%</div></div>
-
-                  <span>Node.js</span>
-                  <div class="progress"><div class="determinate">90%</div></div>
-
-                  <span>Express</span>
-                  <div class="progress"><div class="determinate">90%</div></div>
-
-                  <span>JQuery</span>
-                  <div class="progress"><div class="determinate">95%</div></div>
-
-                  <span>Github</span>
-                  <div class="progress"><div class="determinate">90%</div></div>
+                  <h6 style="text-align: center;">
+                    <strong>Languages:</strong>
+                  </h6>
+                  <ul>
+                    <li>JavaScript/ES6</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                  </ul>
+                  <h6 style="text-align: center;">
+                    <strong>Frameworks:</strong>
+                  </h6>
+                  <ul>
+                    <li>React.js</li>
+                    <li>Vue.js</li>
+                    <li>React Native</li>
+                    <li>Redux</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>JQuery</li>
+                    <li>Next.js</li>
+                    <li>SASS</li>
+                  </ul>
+                  <h6 style="text-align: center;">
+                    <strong>Tools:</strong>
+                  </h6>
+                  <ul>
+                    <li>Webpack</li>
+                    <li>Babel</li>
+                    <li>Jest</li>
+                    <li>Enzyme</li>
+                    <li>Docker</li>
+                  </ul>
+                  <h6 style="text-align: center;">
+                    <strong>Databases:</strong>
+                  </h6>
+                  <ul>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -287,6 +291,65 @@
                 <div class="screenshots" id="portfolio-item">
                   <div class="row">
                     <ul class="grid">
+                      <!-- Portfolio one -->
+                      <li class="col m6 s12 mix category-2">
+                        <a
+                          href="portfolio-full.html"
+                          class="sa-view-project-detail"
+                          data-action="#project-one"
+                        >
+                          <figure class="more">
+                            <img
+                              src="assets/images/p-1small.png"
+                              alt="Screenshot 01"
+                              class=""
+                            />
+                            <figcaption>
+                              <div class="caption-content">
+                                <div class="single_image">
+                                  <h2>Internet traffic analysis tool.</h2>
+                                  <p>
+                                    Analyse internet traffic by user on company
+                                    network.
+                                  </p>
+                                </div>
+                              </div>
+                            </figcaption>
+                          </figure>
+                        </a>
+                      </li>
+
+                      <!-- Portfolio four -->
+                      <li class="col m6 s12 mix category-2">
+                        <a
+                          href="portfolio-full.html"
+                          class="sa-view-project-detail"
+                          data-action="#project-four"
+                        >
+                          <figure class="more">
+                            <img
+                              src="assets/images/p-4small.jpg"
+                              alt="Screenshot 01"
+                              class=""
+                            />
+                            <figcaption>
+                              <div class="caption-content">
+                                <div class="single_image">
+                                  <h2>
+                                    Healthcare organizations administrative
+                                    tool.
+                                  </h2>
+                                  <p>
+                                    Web service for managing healthcare
+                                    organizations admins and agents. CRUD
+                                    operations for all reports and cases.
+                                  </p>
+                                </div>
+                              </div>
+                            </figcaption>
+                          </figure>
+                        </a>
+                      </li>
                       <!-- Portfolio eight -->
                       <li class="col m6 s12 mix category-2">
                         <a
@@ -296,7 +359,7 @@
                         >
                           <figure class="more">
                             <img
-                              src="assets/images/p-8.JPG"
+                              src="assets/images/p-8small.JPG"
                               alt="Screenshot 01"
                               class=""
                             />
@@ -445,30 +508,7 @@
                           </figure>
                         </a>
                       </li>
-                      <!-- Portfolio one -->
-                      <li class="col m6 s12 mix category-3">
-                        <a
-                          href="portfolio-full.html"
-                          class="sa-view-project-detail"
-                          data-action="#project-one"
-                        >
-                          <figure class="more">
-                            <img
-                              src="assets/images/p-1.jpg"
-                              alt="Screenshot 01"
-                              class=""
-                            />
-                            <figcaption>
-                              <div class="caption-content">
-                                <div class="single_image">
-                                  <h2>Hangman Game</h2>
-                                  <p>Browser hangman game.</p>
-                                </div>
-                              </div>
-                            </figcaption>
-                          </figure>
-                        </a>
-                      </li>
+
                       <!-- Portfolio two -->
                       <li class="col m6 s12 mix category-2">
                         <a
@@ -498,30 +538,6 @@
                         </a>
                       </li>
 
-                      <!-- Portfolio four -->
-                      <li class="col m6 s12 mix category-3">
-                        <a
-                          href="portfolio-full.html"
-                          class="sa-view-project-detail"
-                          data-action="#project-four"
-                        >
-                          <figure class="more">
-                            <img
-                              src="assets/images/p-4.jpg"
-                              alt="Screenshot 01"
-                              class=""
-                            />
-                            <figcaption>
-                              <div class="caption-content">
-                                <div class="single_image">
-                                  <h2>RPG Game</h2>
-                                  <p>Browser RPG game</p>
-                                </div>
-                              </div>
-                            </figcaption>
-                          </figure>
-                        </a>
-                      </li>
                       <!-- Portfolio five -->
                       <li class="col m6 s12 mix category-1">
                         <a
@@ -539,35 +555,7 @@
                               <div class="caption-content">
                                 <div class="single_image">
                                   <h2>My Reads</h2>
-                                  <p>App for managins your books.</p>
-                                </div>
-                              </div>
-                            </figcaption>
-                          </figure>
-                        </a>
-                      </li>
-
-                      <!-- Portfolio seven -->
-                      <li class="col m6 s12 mix category-1">
-                        <a
-                          href="portfolio-full.html"
-                          class="sa-view-project-detail"
-                          data-action="#project-seven"
-                        >
-                          <figure class="more">
-                            <img
-                              src="assets/images/p-7.JPG"
-                              alt="Screenshot 01"
-                              class=""
-                            />
-                            <figcaption>
-                              <div class="caption-content">
-                                <div class="single_image">
-                                  <h2>Indecision</h2>
-                                  <p>
-                                    To do app which will help you to deside what
-                                    to do next from your to do list.
-                                  </p>
+                                  <p>App for managing your books.</p>
                                 </div>
                               </div>
                             </figcaption>

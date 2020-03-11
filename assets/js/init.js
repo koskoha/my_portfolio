@@ -5,23 +5,12 @@ $(document).ready(function() {
     /* NAVIGATION  */
     /***************************************************************************/
 
-    $('.button-collapse').sideNav();
-
-    /**************************************************************************
-                 SKILL BAR 
-    **************************************************************************/
-
-    $(".determinate").each(function() {
-        var width = $(this).text();
-        $(this).css("width", width)
-            .empty()
-            .append('<i class="fa fa-circle"></i>');
-    });
+    $('.sidenav').sidenav();
 
     /*************************************************************************
                 TOOLTIP
     **************************************************************************/
-    $('.tooltipped').tooltip({ delay: 50 });
+    $('.fixed-action-btn').floatingActionButton();
 
     /**************************************************************************
         WOW INIT
@@ -97,6 +86,7 @@ $(document).ready(function() {
 
     $('.sa-view-project-detail').on('click', function(event) {
         event.preventDefault();
+
         var href = $(this).attr('href') + ' ' + $(this).attr('data-action'),
             dataShow = $('#project-gallery-view'),
             dataShowMeta = $('#project-gallery-view meta'),
@@ -114,6 +104,10 @@ $(document).ready(function() {
             setTimeout(function() { preLoader.show(); }, 400);
             setTimeout(function() {
                 dataShow.load(href, function() {
+                    $('.carousel.carousel-slider').carousel({
+                        fullWidth: true,
+                        indicators: true
+                    });
                     dataShowMeta.remove();
                     preLoader.hide();
                     dataShow.fadeIn(600);
@@ -121,6 +115,9 @@ $(document).ready(function() {
                 });
             }, 800);
         });
+ 
+
+
         
         $('#back-button').on('click', function(event) {
             event.preventDefault();
