@@ -834,3 +834,11 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .backdrop {
   background-color: #5da4d9;
 }
+
+.carousel .indicators .indicator-item {
+  background-color: rgba(25, 22, 22, 0.3);
+}
+
+.carousel .indicators .indicator-item.active {
+  background-color: rgba(25, 22, 22, 0.7);
+}
